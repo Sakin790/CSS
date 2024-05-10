@@ -2,12 +2,19 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ref } from 'vue';
+import { reactive } from "vue"
 
 let value = ref('');
 
 const handleClick = () => {
   console.log(value.value);
 };
+
+
+const user = reactive({
+  isLoggedIn: true,
+  isActive: true
+});
 </script>
 
 <template>
@@ -17,5 +24,9 @@ const handleClick = () => {
       Print
     </Button>
     <h3>Message is: {{ value }}</h3>
+    <div v-if="user.isLoggedIn">
+      <p>You r not loggedin</p>
+    </div>
+
   </div>
 </template>
