@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0px 30px;
+}
+
+.nav h4 {
+  font-size: 20px;
+}
+
+.text {
+  width: 100%;
+  padding: 50px;
+}
+
+.text h1 {
+  line-height: 40px;
+}
+.containt {
+  display: flex;
+  justify-content: space-around;
+}
