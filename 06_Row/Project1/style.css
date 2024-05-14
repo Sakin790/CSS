@@ -41,3 +41,8 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.left{
+  width: 50%;
+  height:500px
+  
+}
